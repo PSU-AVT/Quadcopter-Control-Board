@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="GND$" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="3.3V$" color="4" fill="3" visible="yes" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
@@ -1250,25 +1250,19 @@ Source: 008-0260-0_E.pdf</description>
 </class>
 </classes>
 <designrules>
-<description language="en">
-&lt;p&gt;&lt;b&gt;EAGLE Design Rules for Sunstone 4 Layer Designs &lt;/b&gt;&lt;p&gt;
-&lt;p&gt;Originally from Sunstone.com's SSC-EAGLE-4Lyr_v1.0.0.3.dru file in their SSC-Eagle-246_v1.0.0.3.zip file located &lt;a href=http://www.sunstone.com/pcb-resources/Downloads.aspx&gt;here&lt;/a&gt;.
-&lt;p&gt;2009-11-23: Ken Zeigler&lt;p&gt; 
-&lt;ul&gt;
-&lt;li&gt;Layer thickness updated per &lt;a href=http://www.sunstone.com/products-services/quickturn-proto-boards/construction-detail.aspx&gt;sunstone.com's construction-detail.aspx&lt;/a&gt;
-&lt;li&gt;Restring to 8.5mil per &lt;a href=http://www.sunstone.com/products-services/quickturn-proto-boards/drill-file-pad-clearance-setup.aspx&gt;sunstone.com's drill-file-pad-clearance-setup.aspx&lt;/a&gt;. This reaches the 25mil tolerance listed  (  8.5mil pad + 8mil hole + 8.5mill pad = 25mil).
-&lt;li&gt;Via Clearance left at 6 mil per &lt;a href=http://www.sunstone.com/products-services/quickturn-proto-boards/drill-file-pad-clearance-setup.aspx&gt;sunstone.com's drill-file-pad-clearance-setup.aspx&lt;/a&gt; This is unchanged since it exceeds the 33mil spec listed ( 6mil clearance + 8.5mil pad + 8mil hole + 8.5mill pad + 6mil clearance = 37mil).
-&lt;/ul&gt;
-
-&lt;p&gt;2009-12-04: Andrew Greenberg&lt;p&gt; 
-&lt;ul&gt;
-&lt;li&gt;Changed layers from 1,2,15,16 to 1,2,3,16.
-&lt;li&gt;Reformatted comments
-&lt;/ul&gt;
-</description>
-<param name="layerSetup" value="(1+2*3+16)"/>
-<param name="mtCopper" value="0.0432mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0432mm"/>
-<param name="mtIsolate" value="12mil 28mil 12mil 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.3023mm"/>
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
+&lt;p&gt;
+Please make sure your boards conform to these design rules.</description>
+<param name="layerSetup" value="(1*2)+(3*16)"/>
+<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
+<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
@@ -1280,12 +1274,12 @@ Source: 008-0260-0_E.pdf</description>
 <param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="20mil"/>
-<param name="mdDrill" value="16mil"/>
+<param name="mdCopperDimension" value="15mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="8mil"/>
-<param name="msMicroVia" value="9.9898mm"/>
+<param name="msDrill" value="13mil"/>
+<param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -1294,20 +1288,20 @@ Source: 008-0260-0_E.pdf</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="0.2118mm"/>
-<param name="rlMaxPadTop" value="999mil"/>
-<param name="rlMinPadInner" value="0.2118mm"/>
-<param name="rlMaxPadInner" value="999mil"/>
-<param name="rlMinPadBottom" value="0.2118mm"/>
-<param name="rlMaxPadBottom" value="999mil"/>
-<param name="rlMinViaOuter" value="0.2118mm"/>
-<param name="rlMaxViaOuter" value="999mil"/>
-<param name="rlMinViaInner" value="0.2118mm"/>
-<param name="rlMaxViaInner" value="999mil"/>
-<param name="rlMinMicroViaOuter" value="0.2118mm"/>
-<param name="rlMaxMicroViaOuter" value="999mil"/>
-<param name="rlMinMicroViaInner" value="0.2118mm"/>
-<param name="rlMaxMicroViaInner" value="999mil"/>
+<param name="rlMinPadTop" value="7mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="7mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="7mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
 <param name="psFirst" value="-1"/>
@@ -1315,8 +1309,8 @@ Source: 008-0260-0_E.pdf</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="3mil"/>
-<param name="mlMaxStopFrame" value="3mil"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="0mil"/>
@@ -1331,7 +1325,7 @@ Source: 008-0260-0_E.pdf</description>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
-<param name="useDiameter" value="31"/>
+<param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
@@ -2103,13 +2097,14 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="26.035" y1="5.715" x2="26.67" y2="6.35" width="0.2032" layer="1"/>
 <wire x1="26.67" y1="6.35" x2="26.67" y2="8.04" width="0.2032" layer="1"/>
 <wire x1="9.105" y1="36.195" x2="9.205" y2="39.005" width="0.2032" layer="1"/>
-<wire x1="9.105" y1="36.195" x2="9.105" y2="28.79" width="0.2032" layer="1"/>
+<wire x1="9.105" y1="36.195" x2="9.105" y2="26.885" width="0.2032" layer="1"/>
 <wire x1="4.66" y1="20.32" x2="4.66" y2="23.1512" width="0.2032" layer="1"/>
 <wire x1="4.66" y1="23.1512" x2="5.08" y2="23.5712" width="0.2032" layer="1"/>
-<wire x1="14.605" y1="26.67" x2="6.985" y2="26.67" width="0.2032" layer="1"/>
-<wire x1="6.985" y1="26.67" x2="5.08" y2="24.765" width="0.2032" layer="1"/>
-<wire x1="5.08" y1="24.765" x2="5.08" y2="23.5712" width="0.2032" layer="1"/>
-<wire x1="9.105" y1="28.79" x2="6.985" y2="26.67" width="0.2032" layer="1"/>
+<wire x1="14.605" y1="26.67" x2="8.89" y2="26.67" width="0.2032" layer="1"/>
+<wire x1="8.89" y1="26.67" x2="5.715" y2="26.67" width="0.2032" layer="1"/>
+<wire x1="8.89" y1="26.67" x2="5.715" y2="26.67" width="0" layer="19" extent="1-16"/>
+<wire x1="5.715" y1="26.67" x2="5.08" y2="26.035" width="0.2032" layer="1"/>
+<wire x1="5.08" y1="26.035" x2="5.08" y2="23.5712" width="0.2032" layer="1"/>
 <via x="41.91" y="12.7" extent="1-16" drill="0.6"/>
 <wire x1="41.91" y1="12.7" x2="41.91" y2="8.89" width="0.2032" layer="16"/>
 <wire x1="41.91" y1="8.89" x2="40.64" y2="7.62" width="0.2032" layer="16"/>
@@ -2132,6 +2127,7 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="38.215" y1="22.975" x2="40.005" y2="24.765" width="0.2032" layer="1"/>
 <via x="40.005" y="24.765" extent="1-16" drill="0.6"/>
 <wire x1="28.575" y1="24.55" x2="31.115" y2="24.55" width="0.2032" layer="1"/>
+<wire x1="9.105" y1="26.885" x2="8.89" y2="26.67" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="S1" pad="2"/>

@@ -1,0 +1,44 @@
+Partlist
+
+Exported from quadcopter-control-board.brd at 10/13/12 3:26 PM
+
+EAGLE Version 6.2.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part          Value          Package              Library      Position (inch)       Orientation
+
+9DOF-SPARKFUN SEN-10724STD   SPARKFUN-9DOF        wicker       (2.175 0.1)           R90
+ADC_SPI       M09LOCK        1X09_LOCK            sparkfun     (0.675 1.575)         R0
+C1            10uF           0603-CAP             sparkfun     (1.225 1)             R90
+C2            16pF           0603-CAP             sparkfun     (1.5 0.725)           R0
+C3            16pF           0603-CAP             sparkfun     (1.375 0.725)         R180
+C4            16pF           0603-CAP             sparkfun     (0.325 0.8)           R0
+C5            16pF           0603-CAP             sparkfun     (0.15 0.8)            R180
+CN1                          1X06_ROUND           microbuilder (3.925 0.85)          R90
+GPIO2         M10LOCK        1X10_LOCK            sparkfun     (2.425 0.15)          R0
+IC1                          SOT223               sparkfun     (0.2 1.05)            R0
+JTAG1         JTAG           CORTEXM3_SWD10_MOLEX microbuilder (0.625 0.85)          R270
+PWMTOMOTORS   M15LOCK        1X15_LOCK            sparkfun     (2.375 1.575)         R0
+PWR_GPIO1     M10LOCK        1X10_LOCK            sparkfun     (0.675 0.15)          R0
+Q1            12MHz          CTS406               crystal      (1.45 0.575)          R0
+Q2                           SOT23-R              microbuilder (0.325 1.575)         R0
+R1            10k            0603-RES             sparkfun     (1.65 0.65)           R270
+R2            10k            0603-RES             sparkfun     (1.125 1)             R270
+R3            10k            0603-RES             sparkfun     (1.125 0.45)          R270
+R4            10k            0603-RES             sparkfun     (1.025 0.325)         R0
+R5            470            0603-RES             sparkfun     (1.125 0.625)         R180
+R6            33             0603-RES             sparkfun     (0.475 0.175)         R180
+R7            470            0603-RES             sparkfun     (1.05 0.725)          R180
+R8            33             0603-RES             sparkfun     (0.475 0.275)         R180
+R9            1.5k           0603-RES             sparkfun     (0.15 1.525)          R180
+R10           150            0603-RES             sparkfun     (0.15 1.625)          R0
+R11           10k            0603-RES             sparkfun     (0.325 1.425)         R0
+R12           2k             0603-RES             sparkfun     (0.15 1.425)          R0
+R13           10k            0603-RES             sparkfun     (0.475 0.375)         R0
+R14           100k           0603-RES             sparkfun     (0.625 0.375)         R180
+S1            RESET          TACTILE_SWITCH_SMD   sparkfun     (0.95 0.525)          R270
+S2            ISP            TACTILE_SWITCH_SMD   sparkfun     (0.95 0.925)          R270
+U1                           LQFP48               microbuilder (1.475 1)             R90
+X1            USB-SMD-NS     USB-MINIB-NOSTOP     sparkfun     (0.2 0.325)           R0
+XB1           XBEE-PRO       XBEE-PRO             microbuilder (3.15 0.825)          R270
