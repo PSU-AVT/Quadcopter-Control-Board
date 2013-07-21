@@ -1,7 +1,7 @@
 Autonomous Vehicles Team
 Quadcopter Control Board
 
-v1 (protobard)
+v1 (protoboard)
 
 v2 (first pcb) built and found to have no functioning power layer, and the TxD/RxD lines were swapped between the processor and the FTDI serial out. The XBee serial worked correctly.  
 
