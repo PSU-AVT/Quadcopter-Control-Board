@@ -5,7 +5,7 @@ v1 (protoboard)
 
 v2 (first pcb) built and found to have no functioning power layer, and the TxD/RxD lines were swapped between the processor and the FTDI serial out. The XBee serial worked correctly.  
 
-v3 (current pcb) modified the clock traces, added a mini-USB connector and 5V-3.3V regulator, fixed the RxD/TxD oops, and hopefully repaired the power plane issue. Gerbers have been submitted but won't be tested until early October due to vacations. 
+v3 (current pcb) modified the clock traces, added a mini-USB connector and 5V-3.3V regulator, fixed the RxD/TxD oops, and repaired the power plane. Hardware successfully deployed.
 
 Built collaboratively by Jenner Hanni (wicker), Camille Huffman Day (squidpie), and Greg Haynes (greghaynes). Huge thanks to Andrew Greenberg, Bart Massey, Chris, and Tim from the Portland State Aerospace Society.
 
